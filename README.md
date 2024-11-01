@@ -11,6 +11,8 @@
    - [Kết nối địa điểm với Polygon, MultiPolygon, Point](#6-kết-nối-địa-điểm-với-polygon-multipolygon-point)
    - [Các thuật toán hỗ trợ vẽ](#7-các-thuật-toán-hỗ-trợ-vẽ)
 3. [Các tính năng cho Client Website](#iii-các-tính-năng-cho-client-website)
+   - [Chỉ đường](#1-chỉ-đường)
+   - [Các thuật toán hỗ trợ tìm đường](#2-các-thuật-toán-hỗ-trợ-tìm-đường)
 4. [Công nghệ và Công cụ Sử dụng](#iv-công-nghệ-và-công-cụ-sử-dụng)
 5. [Từ điển](#v-từ-điển)
 
@@ -72,18 +74,26 @@ Mục đích của tài liệu này là để hướng dẫn phát triển và t
 ---
 
 ## III. Các tính năng cho Client Website
+1. **Chỉ đường**
+   - **Mô tả**: Tính năng chỉ đường cho phép người dùng tìm lộ trình từ vị trí hiện tại đến đích mong muốn.
+   - **Chức năng chính**:
+     - **Tìm kiếm địa điểm**: Người dùng có thể nhập địa chỉ hoặc chọn địa điểm trên bản đồ.
+     - **Chọn phương tiện di chuyển**: Hỗ trợ các loại phương tiện như ô tô, xe đạp, đi bộ.
+     - **Hiển thị lộ trình**: Vẽ lộ trình trên bản đồ với các thông tin như khoảng cách, thời gian dự kiến.
+     - **Cung cấp hướng dẫn từng bước**: Hiển thị hướng dẫn từng bước để người dùng dễ dàng theo dõi.
 
-1. **Thuật toán kết nối các đường với nhau (Map Matching)**
-   - **Mô tả**: Phân tích vị trí người dùng và xác định đường đi gần nhất trên bản đồ.
-   - **Ứng dụng**: Sử dụng cho các dịch vụ định vị và chỉ đường.
+2.  **Các thuật toán hỗ trợ tìm đường**
+      - **Thuật toán kết nối các đường với nhau (Map Matching)**
+         - **Mô tả**: Phân tích vị trí người dùng và xác định đường đi gần nhất trên bản đồ.
+         - **Ứng dụng**: Sử dụng cho các dịch vụ định vị và chỉ đường.
 
-2. **Thuật toán tìm đường ngắn nhất**
-   - **Mô tả**: Tìm lộ trình ngắn nhất từ điểm A đến điểm B.
-   - **Phương pháp**: Dijkstra hoặc A* là các thuật toán phổ biến cho bài toán này.
+      - **Thuật toán tìm đường ngắn nhất**
+         - **Mô tả**: Tìm lộ trình ngắn nhất từ điểm A đến điểm B.
+         - **Phương pháp**: Dijkstra hoặc A* là các thuật toán phổ biến cho bài toán này.
 
-3. **Thuật toán làm mượt điểm**
-   - **Mô tả**: Cải thiện tính thẩm mỹ của lộ trình bằng cách làm mềm các điểm, giảm góc nhọn.
-   - **Phương pháp**: Sử dụng các kỹ thuật như Bezier curve hoặc Chaikin's algorithm.
+      - **Thuật toán làm mượt điểm**
+         - **Mô tả**: Cải thiện tính thẩm mỹ của lộ trình bằng cách làm mềm các điểm, giảm góc nhọn.
+         - **Phương pháp**: Sử dụng các kỹ thuật như Bezier curve hoặc Chaikin's algorithm.
 
 ---
 
