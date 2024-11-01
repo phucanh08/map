@@ -88,8 +88,10 @@ Mục đích của tài liệu này là để hướng dẫn phát triển và t
 ---
 
 ## IV. Công nghệ và Công cụ Sử dụng
-- **Ngôn ngữ lập trình**: JavaScript, Python, hoặc ngôn ngữ phù hợp với hệ thống.
-- **Thư viện bản đồ**: Leaflet, OpenLayers hoặc Mapbox.
+- **Ngôn ngữ lập trình**: 
+   - Admin: JavaScript, TypeScript (React).
+   - Client: Dart(Flutter) hoặc JavaScript, TypeScript (React).
+- **Thư viện bản đồ**: Leaflet.
 - **Cơ sở dữ liệu**: MySQL, PostgreSQL với PostGIS (nếu cần hỗ trợ dữ liệu địa lý).
 
 ---
